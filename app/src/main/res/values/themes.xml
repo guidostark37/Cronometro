@@ -2,8 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Cronometro" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+       <item name="colorPrimary">@color/black</item>
     </style>
 
     <style name="Theme.Cronometro" parent="Base.Theme.Cronometro" />
+    <style name="bacgraound" parent="Widget.Material3.Button">
+        <item name="android:background">
+             @drawable/estiloboton
+        </item>
+
+    </style>
+
+
 </resources>
