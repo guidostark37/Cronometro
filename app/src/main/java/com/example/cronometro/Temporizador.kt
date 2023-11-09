@@ -36,6 +36,9 @@ class Temporizador : AppCompatActivity() {
                             hora--
                             minuto = 59
                         }
+                        if (hora==0.toLong() && minuto ==0.toLong() && segundo <0.toLong()){
+                            this.cancel()
+                        }
 
 
 

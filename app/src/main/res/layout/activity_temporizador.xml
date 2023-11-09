@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Temporizador">
 
     <TextView
@@ -13,7 +14,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="00:00:00"
-        android:textSize="50dp" />
+        android:textSize="50dp"
+        android:textColor="@color/orange"/>
 
     <Button
         android:id="@+id/btnstart_pause"
@@ -53,6 +55,7 @@
         android:layout_alignParentStart="true"
         android:hint="0"
         android:layout_alignParentTop="true"
+        android:textColor="@color/orange"
         android:layout_marginStart="26dp"
         android:layout_marginTop="89dp"
         android:layout_marginEnd="33dp"
@@ -68,6 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/txtTemporizador"
         android:layout_alignParentTop="true"
+        android:textColor="@color/orange"
         android:textAlignment="center"
         android:layout_marginTop="79dp"
         android:layout_marginEnd="28dp"
@@ -84,6 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/txtTemporizador"
         android:layout_alignParentTop="true"
+        android:textColor="@color/orange"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="90dp"
         android:layout_marginEnd="49dp"
