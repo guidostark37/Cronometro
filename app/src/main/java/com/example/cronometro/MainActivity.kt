@@ -1,7 +1,7 @@
 package com.example.cronometro
 
 import android.annotation.SuppressLint
-import android.graphics.Color
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -63,7 +63,9 @@ class MainActivity : AppCompatActivity() {
             binding.txttime.text ="00:0${minute}:${count++}"
         }
 
-
+        binding.btntemporizador.setOnClickListener {
+            startActivity(Intent(this,Temporizador::class.java))
+        }
 
     }
 }
