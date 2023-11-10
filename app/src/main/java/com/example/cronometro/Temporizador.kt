@@ -1,6 +1,7 @@
 package com.example.cronometro
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -48,6 +49,7 @@ class Temporizador : AppCompatActivity() {
 
             }
         }
+
         binding.btnstartPause.setOnClickListener {
             hora = binding.edthora.text.toString().toLong()
             minuto = binding.edtminutos.text.toString().toLong()
@@ -56,14 +58,20 @@ class Temporizador : AppCompatActivity() {
 
 
             }
+
         binding.btnreset.setOnClickListener {
             time.cancel()
             binding.edthora.setText("0")
             binding.edtminutos.setText("0")
             binding.edtsegundos.setText("0")
         }
+
+        binding.btncronometro.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
         }
 
-
-
     }
+
+
+
+}
